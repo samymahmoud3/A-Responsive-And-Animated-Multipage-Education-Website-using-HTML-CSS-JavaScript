@@ -20,7 +20,7 @@
     --color-black: #000;
     --color-bg: #1f2641;
 
-    --container-width-lg: 72%;
+    --container-width-lg: 75%;
     --container-width-md: 90%;
     --container-width-sm: 94%;
 
@@ -116,7 +116,7 @@ section-header
 .header {
     position: relative;
     width: 100%;
-    min-height: 70vh;
+    min-height: 60vh;
     background: url(img/pexels-nothing-ahead-8537017.jpg);
     background-position: center;
     background-size: cover;
@@ -129,16 +129,24 @@ section-header
     overflow: hidden;
 }
 
-.header nav {
-    position: absolute;
+nav {
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
+    height: 5rem;
     text-align: center;
     background: transparent;
     padding: 10px 9%;
+    z-index: 11;
+}
+
+/*change nav-bar when scroll*/
+.window-scroll {
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 4, 255, 0.3);
 }
 
 .header .nav-links ul {
@@ -201,14 +209,14 @@ section-header
     display: block;
     content: '';
     width: 0%;
-    height: 1px;
+    height: 2px;
     background: var(--color-danger);
     margin: auto;
 }
 
 .header .nav-links ul li:hover::after {
-    animation: show-bottom-lines 1s ease infinite;
-    -webkit-animation: show-bottom-lines 1s ease forwards;
+    animation: show-bottom-lines 1s ease-in-out forwards;
+    -webkit-animation: show-bottom-lines 1s ease-in-out forwards;
 }
 
 @keyframes show-bottom-lines {
@@ -310,54 +318,40 @@ section-categories
 .categories {
     background: #3d3996;
     margin: 100px 0;
-    height: 500px;
+    height: 26rem;
 }
 .row{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-}
-
-.categories .text-left{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    left: 0;
-    flex-basis: 30%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: var(--container-width-lg);
 }
 
 .categories .text-left p{
-    margin: 20px 0;
+    margin: 20px 10px;
 }
 
 .categories .text-left .btn{
-    width: 200px;
+    width: 150px;
 }
 
 .categories .cards-right {
-    position: absolute;
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: repeat(3, 1fr) ;
     background-color: transparent;
     gap: 10px;
-    transform: translate(300px,70px);
-    -webkit-transform: translate(300px,70px);
-    -moz-transform: translate(300px,70px);
-    -ms-transform: translate(300px,70px);
-    -o-transform: translate(300px,70px);
+    width: 100%;
 }
 
 .categories .cards-right > div {
-    background-color: var(--color-bg);
-    text-align: left;
-    padding: 10px 10px;
-    width: 250px;
-    height: 250px;
+    background:#354172;
+    padding: 5px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    box-shadow: 0 0 6px rgba(0, 247, 255, 0.9);
+}
+.cards-right .card p{
+    font-size: small;
 }
