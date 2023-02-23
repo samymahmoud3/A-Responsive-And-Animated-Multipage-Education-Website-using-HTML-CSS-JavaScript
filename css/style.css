@@ -413,3 +413,82 @@ section-courses
 .course-card .btn {
     padding: 7px;
 }
+
+/*===========
+    FAQs-section
+=============*/
+
+.FAQs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.FAQs .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5rem;
+    gap: 10px;
+}
+
+.FAQs .container>div {
+    background: #354172;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.FAQs_card .Q {
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.FAQs_card .Q i {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 13px 5px 0 5px;
+    cursor: pointer;
+}
+
+.open .Q i {
+    display: none;
+}
+
+.FAQs_card .Q h4 {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.FAQs_card p {
+    position: relative;
+    font-style: oblique;
+    font-size: .94rem;
+    display: none;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.open p {
+    display: block;
+}
+
+.FAQs_card .A i {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    margin: 13px 5px 0 5px;
+    cursor: pointer;
+}
+
+.open .A i {
+    display: block;
+}
