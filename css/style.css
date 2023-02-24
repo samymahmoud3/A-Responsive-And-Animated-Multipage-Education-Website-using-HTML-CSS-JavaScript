@@ -492,3 +492,71 @@ section-courses
 .open .A i {
     display: block;
 }
+
+/*===========
+    testimonials-section
+=============*/
+.testimonials {
+    width: 100%;
+}
+
+.testimonials .container {
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.testimonials .container .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-12%);
+    -webkit-transform: translateX(-12%);
+    -moz-transform: translateX(-12%);
+    -ms-transform: translateX(-12%);
+    -o-transform: translateX(-12%);
+}
+
+
+
+.testimonials h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.testimonials .container .content img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1rem solid #6c63ff;
+}
+
+.testimonials .container .content h4 {
+    margin: 10px auto;
+}
+
+.testimonials .container .content p {
+    position: relative;
+    font-style: oblique;
+    margin: 80px auto;
+    background: #354172;
+    padding: 2.5rem 0;
+}
+
+.testimonials .container .content p::before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(135deg, rgb(16, 26, 44), rgb(53, 65, 114), rgb(53, 65, 114));
+    top: -1.4rem;
+    left: 47.8%;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
