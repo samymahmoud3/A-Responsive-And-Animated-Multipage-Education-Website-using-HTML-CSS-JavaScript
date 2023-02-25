@@ -3,7 +3,7 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
@@ -28,7 +28,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.7;
     color: var(--color-white);
     background: var(--color-bg);
@@ -207,7 +207,7 @@ nav {
 
 .header .nav-links ul li::after {
     display: block;
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     background: var(--color-danger);
@@ -244,7 +244,7 @@ nav {
 
 .logo h4 {
     position: relative;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-weight: 900;
     font-size: 2.5rem;
     color: transparent;
@@ -471,7 +471,7 @@ section-courses
 .FAQs_card p {
     position: relative;
     font-style: oblique;
-    font-size: .94rem;
+    font-size: 0.94rem;
     display: none;
     margin: 1rem 0 1rem 1rem;
 }
@@ -519,8 +519,6 @@ section-courses
     -o-transform: translateX(-12%);
 }
 
-
-
 .testimonials h2 {
     margin-bottom: 5rem;
     text-align: center;
@@ -551,7 +549,10 @@ section-courses
     position: absolute;
     width: 3rem;
     height: 3rem;
-    background: linear-gradient(135deg, rgb(16, 26, 44), rgb(53, 65, 114), rgb(53, 65, 114));
+    background: linear-gradient(135deg,
+            rgb(16, 26, 44),
+            rgb(53, 65, 114),
+            rgb(53, 65, 114));
     top: -1.4rem;
     left: 47.8%;
     transform: rotate(45deg);
@@ -559,4 +560,73 @@ section-courses
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
+}
+
+/*===========
+    footer-section
+=============*/
+.footer{
+    width: 100%;
+    background: #314286;
+    margin-top: 3rem;
+    padding: 2rem 4rem;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.footer .container h4{
+    margin: 1.5rem 0;
+}
+
+.log h4 {
+    color: white;
+}
+
+.footer .container .footer_1{
+    flex-basis: 30%;
+}
+
+.footer_links li a{
+    color: #c5bfbf;
+}
+
+.privacy li a{
+    color: #c5bfbf;
+}
+
+.footer_1 p{
+    color: #c5bfbf;
+}
+
+.footer_4 p{
+    color: #c5bfbf;
+}
+
+.social {
+    margin: 17px 0 10px;
+}
+
+.social .fa {
+    margin: 0 15px;
+}
+
+.social .fa-facebook {
+    color: rgb(24, 119, 242);
+}
+
+.social .fa-linkedin {
+    color: rgb(10, 102, 194);
+}
+
+.social .fa-twitter {
+    color: rgb(29, 161, 242);
+}
+
+.social .fa-youtube-play {
+    color: rgb(205, 32, 31);
 }
