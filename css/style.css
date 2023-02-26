@@ -340,13 +340,13 @@ section-categories
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: transparent;
-    gap: 10px;
+    gap: 1rem;
     width: 100%;
 }
 
 .categories .cards-right>div {
     background: #354172;
-    padding: 5px;
+    padding: 1rem;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -364,7 +364,7 @@ section-courses
 =================*/
 
 .courses {
-    margin-top: 10rem;
+    margin-top: 20rem;
 }
 
 .courses .container {
@@ -627,8 +627,6 @@ section-courses
 }
 
 
-
-
 /*==================================================
     MEDIA QUERIES TABLETS
 ========================*/
@@ -773,10 +771,10 @@ section-courses
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+        width:var(--container-width-md);
     }
-
-    .course-card {
-        margin: 3px;
+    .courses .container .course-card{
+        margin: 0;
     }
 
     /*---------FAQs-section-----------*/
@@ -805,5 +803,81 @@ section-courses
 @media screen and (min-width: 1025px) {
     .menu_icon {
         opacity: 0;
+    }
+}
+
+
+/*=======================
+    MEDIA QUERIES Phone
+========================*/
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    /*nav-bar*/
+    .nav-links{
+        right: 3%;
+    }
+
+    .header {
+        height: 100vh;
+    }
+
+    .content-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .content-header p{
+        margin: 5% 0;
+    }
+
+    /*----categories-----*/
+    .categories .cards-right{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .categories .cards-right .card {
+        padding: 1rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+    }
+
+    /*----courses-----*/
+    .courses .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .courses .container {
+        width:var(--container-width-sm);
+    }
+    
+    .course-card {
+        flex-basis: 100%;
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    /*---------testimonials--------*/
+    .testimonials .container .content {
+        margin: 0 1.1% 0 0%;
+    }
+
+    .testimonials .container .content p {
+        padding: 1rem;;
+    }
+
+    /*---------footer-section-----------*/
+    .footer .container {
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 1rem;
     }
 }
