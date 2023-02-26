@@ -79,7 +79,7 @@ h4 {
     color: var(--color-black);
     padding: 1rem 2rem;
     text-align: center;
-    margin: 20px 10px;
+    margin: 10px 10px;
     border: 1px solid transparent;
     font-weight: 500;
     transition: all 1s ease;
@@ -116,7 +116,7 @@ section-header
 .header {
     position: relative;
     width: 100%;
-    min-height: 60vh;
+    height: 90vh;
     background: url(img/pexels-nothing-ahead-8537017.jpg);
     background-position: center;
     background-size: cover;
@@ -234,7 +234,7 @@ nav {
 }
 
 .nav-links ul li a:hover {
-    color: #4d4c4c;
+    color: var(--color-danger);
     transition: var(--transition--primary);
     -webkit-transition: var(--transition--primary);
     -moz-transition: var(--transition--primary);
@@ -497,13 +497,12 @@ section-courses
     testimonials-section
 =============*/
 .testimonials {
+    position: relative;
     width: 100%;
 }
 
 .testimonials .container {
     position: relative;
-    text-align: center;
-    align-items: center;
 }
 
 .testimonials .container .content {
@@ -512,11 +511,7 @@ section-courses
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateX(-12%);
-    -webkit-transform: translateX(-12%);
-    -moz-transform: translateX(-12%);
-    -ms-transform: translateX(-12%);
-    -o-transform: translateX(-12%);
+    margin: 0 7% 0 0%;
 }
 
 .testimonials h2 {
@@ -541,7 +536,7 @@ section-courses
     font-style: oblique;
     margin: 80px auto;
     background: #354172;
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
 }
 
 .testimonials .container .content p::before {
@@ -565,21 +560,21 @@ section-courses
 /*===========
     footer-section
 =============*/
-.footer{
+.footer {
     width: 100%;
     background: #314286;
     margin-top: 3rem;
     padding: 2rem 4rem;
 }
 
-.footer .container{
+.footer .container {
     display: flex;
     justify-content: space-between;
     text-align: left;
     margin-bottom: 2rem;
 }
 
-.footer .container h4{
+.footer .container h4 {
     margin: 1.5rem 0;
 }
 
@@ -587,23 +582,23 @@ section-courses
     color: white;
 }
 
-.footer .container .footer_1{
+.footer .container .footer_1 {
     flex-basis: 30%;
 }
 
-.footer_links li a{
+.footer_links li a {
     color: #c5bfbf;
 }
 
-.privacy li a{
+.privacy li a {
     color: #c5bfbf;
 }
 
-.footer_1 p{
+.footer_1 p {
     color: #c5bfbf;
 }
 
-.footer_4 p{
+.footer_4 p {
     color: #c5bfbf;
 }
 
@@ -612,7 +607,7 @@ section-courses
 }
 
 .social .fa {
-    margin: 0 15px;
+    margin: 0 5px;
 }
 
 .social .fa-facebook {
@@ -629,4 +624,186 @@ section-courses
 
 .social .fa-youtube-play {
     color: rgb(205, 32, 31);
+}
+
+
+
+
+/*==================================================
+    MEDIA QUERIES TABLETS
+========================*/
+@media screen and (max-width:1024px) {
+
+    .container {
+        width: var(--container-width-md);
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /*slides*/
+    .testimonials .container .content {
+        margin: 0 2.5% 0 1%;
+    }
+
+    /*=============nav_bar=====================*/
+    .menu_icon {
+        font-size: 2rem;
+        background: transparent;
+        color: white;
+        position: absolute;
+        right: 2.4rem;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        display: none;
+    }
+
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 11rem;
+        height: fit-content;
+    }
+
+    .nav-links ul li {
+        width: 100%;
+        background: #5b55da;
+        padding: 1.3rem;
+    }
+
+    .nav-links ul li a {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .nav-links ul li:hover {
+        background: #1f2641;
+        color: white;
+    }
+
+    .header .nav-links ul li:nth-child(1) {
+        animation-delay: 200ms;
+    }
+
+    .header .nav-links ul li:nth-child(2) {
+        animation-delay: 500ms;
+    }
+
+    .header .nav-links ul li:nth-child(3) {
+        animation-delay: 700ms;
+    }
+
+    .header .nav-links ul li:nth-child(4) {
+        animation-delay: 900ms;
+    }
+
+    /*----content-header-----*/
+
+    .header{
+        height: 65vh;
+    }
+
+    .content-header {
+        width: 48%;
+        position: absolute;
+        left: 3%;
+        top: 7%;
+        text-align: left;
+        gap: 0;
+    }
+
+    .content-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .content-header p {
+        margin: 3% 0;
+    }
+
+    .btn{
+        padding: 8px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    /*----categories-----*/
+    .categories {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .categories .container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    /*----courses-----*/
+    .courses {
+        margin-top: 0;
+    }
+
+    .courses h2 {
+        margin-bottom: 3rem;
+    }
+
+    .courses .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .course-card {
+        margin: 3px;
+    }
+
+    /*---------FAQs-section-----------*/
+    .FAQs .container{
+        grid-template-columns: 1fr;
+    }
+
+    .FAQs .container>div {
+        padding: 1.5rem;
+    }
+
+    .FAQs_card .Q i{
+        margin: 1.5rem 1rem;
+    }
+    
+    /*---------footer-section-----------*/
+    .footer .container {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 4rem;
+    }
+
+}
+
+/*************hidden-menu icon for large screen************/
+@media screen and (min-width: 1025px) {
+    .menu_icon {
+        opacity: 0;
+    }
 }
