@@ -119,6 +119,7 @@ section-header
     height: 100vh;
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/pexels-cup-of-couple-6177678.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
@@ -499,11 +500,12 @@ section-courses
 =============*/
 .testimonials {
     position: relative;
-    width: 100%;
 }
 
 .testimonials .container {
     position: relative;
+    margin: auto;
+    padding-right: 20rem;
 }
 
 .testimonials .container .content {
@@ -512,20 +514,15 @@ section-courses
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 7% 0 0%;
-}
-
-.testimonials h2 {
-    margin-bottom: 5rem;
-    text-align: center;
+   
 }
 
 .testimonials .container .content img {
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 1rem solid #6c63ff;
+    border: 0.8rem solid #6c63ff;
 }
 
 .testimonials .container .content h4 {
@@ -538,6 +535,7 @@ section-courses
     margin: 80px auto;
     background: #354172;
     padding: 2.5rem 1rem;
+    width: 60%;
 }
 
 .testimonials .container .content p::before {
@@ -787,6 +785,12 @@ section-courses
     .FAQs_card .Q i{
         margin: 1.5rem 1rem;
     }
+
+     /*---------testimonials--------*/
+     .testimonials .container .content {
+        margin: 0 0% 0 0%;
+    }
+
     
     /*---------footer-section-----------*/
     .footer .container {
